@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  background-color: #212121;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 24px;
+  max-width: 1366px;
+}
+
+.card {
+  flex: 300px;
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.card .description {
+  padding: 16px 24px;
+}
+
+.card .title {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card .release-date,
+.card .vote-average {
+  margin: 0;
+  color: #777777;
+}
+
+.imagem-segunda {
+  border-radius: 50%;
+  max-width:38px;
+  max-height:38px;
+  width: auto;
+  height: auto; 
+  cursor: pointer;
+  opacity: 0.7;
+  /* largura: 100%; */
+  /* altura: 100%; */
+  /* ajuste do objeto : capa ; */
+}
+
+.circle-image {
+  position:absolute;
+  bottom: 5px; 
+  right:5px; 
+  border-radius: 50%
+
+  /* display: bloco embutido; */
+  /* raio da borda: 50%; */
+  /* estouro: oculto; */
+  /* largura: 50 px; */
+  /* altura: 50px; */
+}
+/* style='position:absolute; bottom: 5px; right:5px; border-radius: 50%;' */
